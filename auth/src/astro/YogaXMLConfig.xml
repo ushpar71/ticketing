@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+        
+            
+
+    <bean name="Vishkambha" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="1"/>        
+    </bean> 
+    <bean name="Preeti" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="2"/>        
+    </bean> 
+    <bean name="Aayushmaan" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="3"/>        
+    </bean> 
+    <bean name="Saubhaagya" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="4"/>        
+    </bean>
+    <bean name="Sobhana" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="5"/>        
+    </bean> 
+    <bean name="Atiganda" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="6"/>        
+    </bean> 
+    <bean name="Sukarman" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="7"/>        
+    </bean> 
+    <bean name="Dhriti" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="8"/>        
+    </bean>
+    <bean name="Shoola" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="9"/>        
+    </bean> 
+    <bean name="Ganda" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="10"/>        
+    </bean> 
+    <bean name="Vriddhi" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="11"/>        
+    </bean> 
+    <bean name="Dhruva" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="12"/>        
+    </bean>
+    <bean name="Vyaaghaata" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="13"/>        
+    </bean> 
+    <bean name="Harshana" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="14"/>        
+    </bean> 
+    <bean name="Vajra" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="15"/>        
+    </bean> 
+    <bean name="Siddhi" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="16"/>        
+    </bean>
+    <bean name="Vyatipaata" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="17"/>        
+    </bean> 
+    <bean name="Variyan" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="18"/>        
+    </bean> 
+    <bean name="Parigha" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="19"/>        
+    </bean> 
+    <bean name="Shiva" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="20"/>        
+    </bean>
+    <bean name="Siddha" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="21"/>        
+    </bean> 
+    <bean name="Saadhya" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="22"/>        
+    </bean> 
+    <bean name="Subha" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="23"/>        
+    </bean> 
+    <bean name="Sukla" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="24"/>        
+    </bean>
+    <bean name="Brahma" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="25"/>        
+    </bean> 
+    <bean name="Indra" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="26"/>        
+    </bean> 
+    <bean name="Vaidhriti" class="com.vedicastrology.chartanalysis.spring.Yoga">                         
+        <constructor-arg value="27"/>        
+    </bean>
+
+
+    <bean name="Yogas" class="com.vedicastrology.chartanalysis.spring.Yogas">
+        <property name="yogas">
+            <set>
+                <ref bean="Vishkambha"/> 
+                <ref bean="Preeti"/> 
+                <ref bean="Aayushmaan"/> 
+                <ref bean="Saubhaagya"/>
+                <ref bean="Sobhana"/> 
+                <ref bean="Atiganda"/> 
+                <ref bean="Sukarman"/> 
+                <ref bean="Dhriti"/>
+                <ref bean="Shoola"/> 
+                <ref bean="Ganda"/> 
+                <ref bean="Vriddhi"/> 
+                <ref bean="Dhruva"/>
+                <ref bean="Vyaaghaata"/> 
+                <ref bean="Harshana"/> 
+                <ref bean="Vajra"/> 
+                <ref bean="Siddhi"/>
+                <ref bean="Vyatipaata"/> 
+                <ref bean="Variyan"/> 
+                <ref bean="Parigha"/> 
+                <ref bean="Shiva"/>
+                <ref bean="Siddha"/> 
+                <ref bean="Saadhya"/> 
+                <ref bean="Subha"/> 
+                <ref bean="Sukla"/>
+                <ref bean="Brahma"/> 
+                <ref bean="Indra"/> 
+                <ref bean="Vaidhriti"/>
+            </set>                
+        </property>
+    </bean>
+
+</beans>

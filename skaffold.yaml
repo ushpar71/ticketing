@@ -1,0 +1,56 @@
+apiVersion: skaffold/v2beta7
+kind: Config
+build:
+  artifacts:
+    - image: ushpar71/auth
+      context: auth
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: ushpar71/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: ushpar71/orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: ushpar71/expiration
+      context: expiration
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: ushpar71/payments
+      context: payments
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: ushpar71/ticketingclient
+      context: ticketingclient
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "**/*.js"
+            dest: .
+deploy:
+  kubectl:
+    manifests:
+      - infra/k8s/*

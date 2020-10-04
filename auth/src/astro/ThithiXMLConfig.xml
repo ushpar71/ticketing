@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+        
+           
+    <bean name="Pratipat" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="1"/>        
+    </bean> 
+    <bean name="Dwitiya" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="2"/>        
+    </bean> 
+    <bean name="Tritiya" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="3"/>        
+    </bean> 
+    <bean name="Chaturthi" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="4"/>        
+    </bean>
+    <bean name="Panchami" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="5"/>        
+    </bean> 
+    <bean name="Shashti" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="6"/>        
+    </bean> 
+    <bean name="Saptami" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="7"/>        
+    </bean> 
+    <bean name="Ashtami" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="8"/>        
+    </bean>
+    <bean name="Navami" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="9"/>        
+    </bean> 
+    <bean name="Dasami" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="10"/>        
+    </bean> 
+    <bean name="Ekadasi" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="11"/>        
+    </bean> 
+    <bean name="Dwadasi" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="12"/>        
+    </bean>
+    <bean name="Trayodasi" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="13"/>        
+    </bean> 
+    <bean name="Chaturdasi" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="14"/>        
+    </bean> 
+    <bean name="Paurnami" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="15"/>        
+    </bean> 
+    <bean name="Amavasya" class="com.vedicastrology.chartanalysis.spring.Thithi">                         
+        <constructor-arg value="16"/>        
+    </bean> 
+
+
+    <bean name="Thithis" class="com.vedicastrology.chartanalysis.spring.Thithis">
+        <property name="thithis">
+            <set>
+                <ref bean="Pratipat"/>
+                <ref bean="Dwitiya"/>
+                <ref bean="Tritiya"/>
+                <ref bean="Chaturthi"/>
+                <ref bean="Panchami"/>
+                <ref bean="Shashti"/>
+                <ref bean="Saptami"/>
+                <ref bean="Ashtami"/>
+                <ref bean="Navami"/>
+                <ref bean="Dasami"/>
+                <ref bean="Ekadasi"/>
+                <ref bean="Dwadasi"/>
+                <ref bean="Trayodasi"/>
+                <ref bean="Chaturdasi"/>
+                <ref bean="Paurnami"/>
+                <ref bean="Amavasya"/>
+            </set>                
+        </property>
+    </bean>
+
+</beans>

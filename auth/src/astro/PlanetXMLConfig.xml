@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+        
+    <bean name="Ascendant" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="0"/>
+        <property name="planetElements.longitude">
+            <bean class="com.vedicastrology.chartanalysis.coordinates.Longitude">
+                <property name="deg" value="330"/>
+                <property name="min" value="10"/>
+                <property name="sec" value="20"/>
+                <property name="hemisphere" value=""/>
+            </bean>
+        </property>
+    </bean>
+    <bean name="Sun" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="1"/>
+        <property name="planetElements.longitude">
+            <bean class="com.vedicastrology.chartanalysis.coordinates.Longitude">
+                <property name="deg" value="340"/>
+                <property name="min" value="10"/>
+                <property name="sec" value="20"/>
+                <property name="hemisphere" value=""/>
+            </bean>
+        </property>
+    </bean>
+    <bean name="Moon" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="2"/>
+        <property name="planetElements.longitude">
+            <bean class="com.vedicastrology.chartanalysis.coordinates.Longitude">
+                <property name="deg" value="350"/>
+                <property name="min" value="10"/>
+                <property name="sec" value="20"/>
+                <property name="hemisphere" value=""/>
+            </bean>
+        </property>
+       
+    </bean>
+    <bean name="Mars" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="3"/>
+    </bean>
+    <bean name="Mercury" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="4"/>
+    </bean>
+    <bean name="Venus" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="5"/>
+    </bean>
+    <bean name="Jupiter" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="6"/>
+    </bean>
+    <bean name="Saturn" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="7"/>
+    </bean>
+    <bean name="Rahu" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="8"/>
+    </bean>
+    <bean name="Kethu" class="com.vedicastrology.chartanalysis.spring.Planet">         
+        <constructor-arg value="9"/>
+    </bean>
+
+    <bean name="Dhumna" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="10"/>    
+    </bean> 
+    <bean name="Vyatipaata" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="11"/>    
+    </bean> 
+    <bean name="Parivesha" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="12"/>    
+    </bean> 
+    <bean name="Indrachaapa" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="13"/>    
+    </bean> 
+    <bean name="Upaketu" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="14"/>    
+    </bean>
+    <bean name="Kaala" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="15"/>    
+    </bean> 
+    <bean name="Mrityu" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="16"/>    
+    </bean> 
+    <bean name="Arthaprahaara" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="17"/>    
+    </bean> 
+    <bean name="Yamaghantaka" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="18"/>    
+    </bean> 
+    <bean name="Gulika" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="19"/>    
+    </bean>
+    <bean name="Maandi" class="com.vedicastrology.chartanalysis.spring.Planet">                 
+        <constructor-arg value="20"/>    
+    </bean>
+
+    <bean name="Planets" class="com.vedicastrology.chartanalysis.spring.Planets">
+        <property name="planets">
+            <set>
+                <ref bean="Ascendant"/>
+                <ref bean="Sun"/>
+                <ref bean="Moon"/>
+                <ref bean="Mars"/>
+                <ref bean="Mercury"/>
+                <ref bean="Venus"/>
+                <ref bean="Jupiter"/>
+                <ref bean="Saturn"/>
+                <ref bean="Rahu"/>
+                <ref bean="Kethu"/>                
+                <ref bean="Dhumna"/> 
+                <ref bean="Vyatipaata"/> 
+                <ref bean="Parivesha"/> 
+                <ref bean="Indrachaapa"/> 
+                <ref bean="Upaketu"/>
+                <ref bean="Kaala"/> 
+                <ref bean="Mrityu"/> 
+                <ref bean="Arthaprahaara"/> 
+                <ref bean="Yamaghantaka"/> 
+                <ref bean="Gulika"/>
+                <ref bean="Maandi"/>
+            </set>
+        </property>
+    </bean>
+
+
+</beans>

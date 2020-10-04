@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticketingclient-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ticketingclient
+  template:
+    metadata:
+      labels:
+        app: ticketingclient
+    spec:
+      containers:
+        - name: ticketingclient
+          image: ushpar71/ticketingclient
+          env:
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ticketingclient-srv
+spec:
+  selector:
+    app: ticketingclient
+  ports:
+    - name: ticketingclient
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

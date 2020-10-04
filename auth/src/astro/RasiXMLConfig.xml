@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+<import resource="PlanetXMLConfig.xml"/>
+                
+    <bean name="Aries" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="1"/>
+    </bean>
+    <bean name="Taurus" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="2"/>
+    </bean>
+    <bean name="Gemini" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="3"/>
+    </bean>
+    <bean name="Cancer" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="4"/>
+    </bean>
+    <bean name="Leo" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="5"/>
+    </bean>
+    <bean name="Virgo" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="6"/>
+    </bean>
+    <bean name="Libra" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="7"/>
+    </bean>
+    <bean name="Scorpio" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="8"/>
+    </bean>
+    <bean name="Sagittarius" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="9"/>
+    </bean>
+    <bean name="Capricorn" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="10"/>
+    </bean>
+    <bean name="Aquarius" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="11"/>
+    </bean>
+    <bean name="Pisces" class="com.vedicastrology.chartanalysis.spring.Rasi">         
+        <constructor-arg value="12"/>
+    </bean>
+    
+    <bean name="Rasis" class="com.vedicastrology.chartanalysis.spring.Rasis">
+        <property name="rasis">
+            <set>
+                <ref bean="Aries"/>
+                <ref bean="Taurus"/>
+                <ref bean="Gemini"/>
+                <ref bean="Cancer"/>
+                <ref bean="Leo"/>
+                <ref bean="Virgo"/>
+                <ref bean="Libra"/>
+                <ref bean="Scorpio"/>
+                <ref bean="Sagittarius"/>
+                <ref bean="Capricorn"/>
+                <ref bean="Aquarius"/>
+                <ref bean="Pisces"/>
+            </set>
+        </property>
+        <property name="planets">
+            <ref bean="Planets"/>
+        </property>
+    </bean>
+
+    <bean parent="Rasis" name="Drekkana" class="com.vedicastrology.chartanalysis.spring.charts.Drekkana"/>
+    <bean parent="Rasis" name="Chaturthamsa" class="com.vedicastrology.chartanalysis.spring.charts.Chaturthamsa"/>
+
+</beans>

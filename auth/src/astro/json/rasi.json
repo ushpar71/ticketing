@@ -1,0 +1,15 @@
+[
+  { "id": 0 },
+  { "id": 1, "name": "Aries", "shortName": "Ar" },
+  { "id": 2, "name": "Taurus", "shortName": "Ta" },
+  { "id": 3, "name": "Gemini", "shortName": "Ge" },
+  { "id": 4, "name": "Cancer", "shortName": "Cn" },
+  { "id": 5, "name": "Leo", "shortName": "Le" },
+  { "id": 6, "name": "Virgo", "shortName": "Vi" },
+  { "id": 7, "name": "Libra", "shortName": "Li" },
+  { "id": 8, "name": "Scorpio", "shortName": "Sc" },
+  { "id": 9, "name": "Sagittaruis", "shortName": "Sg" },
+  { "id": 10, "name": "Capricorn", "shortName": "Cp" },
+  { "id": 11, "name": "Aquarius", "shortName": "Aq" },
+  { "id": 12, "name": "Pisces", "shortName": "Pi" }
+]

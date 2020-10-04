@@ -1,0 +1,48 @@
+[
+  { "id": 0, "name": "Ascendant", "shortName": "As", "planetType": "ASC" },
+  { "id": 1, "name": "Sun", "shortName": "Su", "planetType": "REAL" },
+  { "id": 2, "name": "Moon", "shortName": "Mo", "planetType": "REAL" },
+  { "id": 3, "name": "Mars", "shortName": "Ma", "planetType": "REAL" },
+  { "id": 4, "name": "Mercury", "shortName": "Me", "planetType": "REAL" },
+  { "id": 5, "name": "Venus", "shortName": "Ve", "planetType": "REAL" },
+  { "id": 6, "name": "Jupiter", "shortName": "Ju", "planetType": "REAL" },
+  { "id": 7, "name": "Saturn", "shortName": "Sa", "planetType": "REAL" },
+  { "id": 8, "name": "Rahu", "shortName": "Ra", "planetType": "CHAYAA" },
+  { "id": 9, "name": "Kethu", "shortName": "Ke", "planetType": "CHAYAA" },
+  { "id": 10, "name": "Dhumna", "shortName": "Dh", "planetType": "UPACHAYAA" },
+  {
+    "id": 11,
+    "name": "Vyatipaata",
+    "shortName": "Vy",
+    "planetType": "UPACHAYAA"
+  },
+  {
+    "id": 12,
+    "name": "Parivesha",
+    "shortName": "Pa",
+    "planetType": "UPACHAYAA"
+  },
+  {
+    "id": 13,
+    "name": "Indrachaapa",
+    "shortName": "In",
+    "planetType": "UPACHAYAA"
+  },
+  { "id": 14, "name": "Upaketu", "shortName": "Up", "planetType": "UPACHAYAA" },
+  { "id": 15, "name": "Kaala", "shortName": "Ka", "planetType": "UPACHAYAA" },
+  { "id": 16, "name": "Mrityu", "shortName": "Mr", "planetType": "UPACHAYAA" },
+  {
+    "id": 17,
+    "name": "Arthaprahaara",
+    "shortName": "Ar",
+    "planetType": "UPACHAYAA"
+  },
+  {
+    "id": 18,
+    "name": "Yamaghantaka",
+    "shortName": "Ya",
+    "planetType": "UPACHAYAA"
+  },
+  { "id": 19, "name": "Gulika", "shortName": "Gu", "planetType": "UPACHAYAA" },
+  { "id": 20, "name": "Maandi", "shortName": "Mn", "planetType": "UPACHAYAA" }
+]

@@ -1,0 +1,128 @@
+
+Backup:
+tar -vczf ticketing_backup_20200922.tar  --exclude 'node_modules' --exclude '.git' --exclude 'build' --exclude '.next'  ticketing
+
+In order to Bypass warning in browser:
+thisisunsafe
+
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/partha/Downloads/ticketing-dev-411ae20abac1.jsonkubectl 
+
+kubectl create secret generic jwt-secret --from-literal=JWT_KEY=ushpar71
+kubectl get secrets 
+kubectl delete secret jwt-secret 
+
+
+ingress
+https://kubernetes.github.io/ingress-nginx/deploy/
+kubectl wait --namespace ingress-nginx \
+  --for=condition=ready pod \
+  --selector=app.kubernetes.io/component=controller \
+  --timeout=120s
+  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.40.1/deploy/static/provider/cloud/deploy.yaml
+
+Detect ingress-nginx installed version:
+POD_NAMESPACE=ingress-nginx
+POD_NAME=$(kubectl get pods -n $POD_NAMESPACE -l app.kubernetes.io/name=ingress-nginx --field-selector=status.phase=Running -o jsonpath='{.items[0].metadata.name}')
+kubectl exec -it $POD_NAME -n $POD_NAMESPACE -- /nginx-ingress-controller --version
+
+https://kubernetes.github.io/ingress-nginx/deploy/
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/cloud/deploy.yaml
+
+POD_NAMESPACE=ingress-nginx
+POD_NAME=$(kubectl get pods -n $POD_NAMESPACE -l app.kubernetes.io/name=ingress-nginx  --field-selector=status.phase=Running -o jsonpath='{.items[0].metadata.name}')
+
+kubectl exec -it $POD_NAME -n $POD_NAMESPACE -- /nginx-ingress-controller --version
+
+ kubectl get namespace
+ kubectl get pods
+ kubectl get services
+ kubectl get services  -n ingress-nginx   ( get all services from the nginx namespace)
+
+ kubectl expose deployment ingress-nginx-controller --target-port=80 --type=NodePort -n kube-system
+
+common npm library ts library published as javascript
+
+kubectl delete pod <pod name>
+
+
+NPM
+npm init -y
+npmjs.com ( ushpar71/O...17&^)
+
+GIT:
+git init
+git add .
+git commit -m 'initial commit'
+npm login 
+npm publish --access public
+tsc --init
+npm install typescript del-cli --save-dev
+npm run build
+
+git add .
+git commit -m 'initial commit'
+npm version patch
+npm run build
+npm publish
+npm install express express-validator cookie-session jsonwebtoken @types/cookie-session @types/express @types/jsonwebtoken
+tsc
+
+in auth depl 
+      #  image: us.gcr.io/ticketing-dev-281801/auth
+        image: ushpar71/auth
+
+
+in auth
+npm install @prtickets/common
+npm update @prtickets/common
+
+#
+#Check versioning of the prtickets
+#
+kubectl get pods
+kubectl exec -it auth-depl-xxxxxxxx sh
+
+docker build -t ushpar71/tickets .
+docker push ushpar71/tickets
+
+
+checking cookies:
+base64decode.org
+
+NATS streaming server
+docs.nats.io
+
+
+
+NATS test 
+mkdir nats-test
+cd nats-test
+npm init -y
+npm install node-nats-streaming ts-node-dev typescript @types/node
+
+mkdir src  
+
+tsc --init
+( if error npm install -g typescript)
+
+kubectl port-forward <pod nats-depl-6886c5d59b-xplrq> 4222:4222
+
+
+localhost:8222/streaming
+http://localhost:8222/streaming/clientsz?subs=1
+
+
+##### MONGO ##################
+#### to open Mongo in kubectl
+k get pods   get the deployment id
+k exec -it <depid> mongo
+show dbs;
+use orders;  // orders database
+db.tickets;  // to access the tickets collection on orders database
+db.tickets.find({price:2014}) // to find the tickets with price 2014
+
+Stripe.com ushpar71
+api key: Vpk_test_51HW5oHKciI0VwvhezIJnfrO8H06u7Dy5yfaYWauiOLt5SM34xULBuuexAJvq1PPgeI4n8KqlmgWmYT5mHM8Ss9UV00G2Ug2WUZ
+kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_51HW5oHKciI0VwvheTHDXzd4U5C3b7480UxOGkeMW9NE4iFTkpe4cEFQvXuIpbQnzRPFOEx13eZrl79xA7PFv9e1F00bTnDSmKv
+Documentation: stripe.com/docs/api
+test tocken: tok_visa
