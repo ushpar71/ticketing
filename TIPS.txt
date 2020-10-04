@@ -126,3 +126,31 @@ api key: Vpk_test_51HW5oHKciI0VwvhezIJnfrO8H06u7Dy5yfaYWauiOLt5SM34xULBuuexAJvq1
 kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_51HW5oHKciI0VwvheTHDXzd4U5C3b7480UxOGkeMW9NE4iFTkpe4cEFQvXuIpbQnzRPFOEx13eZrl79xA7PFv9e1F00bTnDSmKv
 Documentation: stripe.com/docs/api
 test tocken: tok_visa
+
+
+
+GIT 
+ssh-keygen -t rsa -b 4096 -C "ushpar71@gmail.com"
+pass phrase NJEB East Brunswick
+
+eval "$(ssh-agent -s)"
+touch ~/.ssh/config
+
+cat > 
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+ssh-add -K ~/.ssh/id_rsa
+<pass phrase>
+
+
+Adding SSH Key to github
+pbcopy < ~/.ssh/id_rsa.pub
+paste key in github
+
+
+git add .
+git commit -m 'comment'
+git status
