@@ -154,3 +154,6 @@ paste key in github
 git add .
 git commit -m 'comment'
 git status
+
+git pull origin master
+pit push origin master
