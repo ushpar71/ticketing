@@ -156,3 +156,5 @@ git commit -m 'comment'
 git status
 git checkout master 
 git checkout -b dev
+git pull origin master
+pit push origin master
