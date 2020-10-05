@@ -154,3 +154,5 @@ paste key in github
 git add .
 git commit -m 'comment'
 git status
+git checkout master 
+git checkout -b dev
